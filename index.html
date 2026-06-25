@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fatima Akbar — Frontend Developer</title>
+
+  <!-- Fonts: Source Serif for editorial display, Inter for body, IBM Plex Mono for labels/data -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- ─── NAVBAR ─────────────────────────────────────────────── -->
+<header>
+  <nav class="navbar" id="navbar" aria-label="Primary navigation">
+    <span class="logo">Fatima Akbar<span class="logo-dot">.</span></span>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"         class="nav-link active">Home</a></li>
+      <li><a href="#about"        class="nav-link">About</a></li>
+      <li><a href="#experience"   class="nav-link">Experience</a></li>
+      <li><a href="#skills"       class="nav-link">Skills</a></li>
+      <li><a href="#services"     class="nav-link">Services</a></li>
+      <li><a href="#projects"     class="nav-link">Projects</a></li>
+      <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+      <li><a href="#blog"         class="nav-link">Blog</a></li>
+      <li><a href="#contact"      class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+<!-- ─── HERO ──────────────────────────────────────────────── -->
+<section id="home" class="section" aria-label="Introduction">
+  <div class="hero-content" data-aos="fade-up" data-aos-duration="700">
+
+    <p class="hero-eyebrow">
+      <span class="status-dot" aria-hidden="true"></span>
+      Available for freelance work
+    </p>
+
+    <h1 class="hero-name">
+      Fatima Akbar —<br>
+      <span class="accent-word">Frontend Developer</span>
+    </h1>
+
+    <p class="hero-role">
+      <span id="typingText"></span><span id="cursor"></span>
+    </p>
+
+    <p class="hero-desc">
+      I build interfaces that are fast, accessible, and considered down to
+      the pixel — using React, modern CSS, and a healthy respect for the
+      person on the other end of the screen.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">
+        View Projects <i class="fas fa-arrow-right" aria-hidden="true"></i>
+      </a>
+      <a href="resume.pdf" class="btn-ghost" download>
+        Download CV <i class="fas fa-download" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <div class="hero-socials">
+      <a href="#" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+      <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <div class="hero-visual" data-aos="fade-up" data-aos-duration="700" data-aos-delay="120">
+    <div class="profile-wrap">
+      <div class="profile-card">
+        <div class="profile-card-inner">
+          <div class="img-fallback">
+            <img src="./src/ChatGPT Image Jun 18, 2026, 05_23_32 PM.png" alt="Photo of Fatima Akbar" />
+          </div>
+        </div>
+      </div>
+      <div class="profile-meta">
+        <div class="profile-meta-item">
+          <small>Experience</small>
+          <strong>1+ yr</strong>
+        </div>
+        <div class="profile-meta-item">
+          <small>Projects shipped</small>
+          <strong>20+</strong>
+        </div>
+        <div class="profile-meta-item">
+          <small>Based in</small>
+          <strong>Karachi</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ─────────────────────────────────────────────── -->
+<section id="about" class="section">
+  <div class="about-grid">
+
+    <div data-aos="fade-right">
+      <div class="section-eyebrow">About Me</div>
+      <h2 class="section-title">
+        Crafting digital <span class="accent-word">experiences</span>
+      </h2>
+      <div class="about-text">
+        <p>
+          I'm a Frontend Developer passionate about crafting modern web
+          applications with excellent UI/UX and performance. Every pixel and
+          interaction matters to me.
+        </p>
+        <p>
+          My expertise covers HTML, CSS, JavaScript, React, Tailwind CSS,
+          responsive design, and seamless API integration — turning ideas
+          into fast, accessible products.
+        </p>
+      </div>
+    </div>
+
+    <div data-aos="fade-left">
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-number counter" data-target="20">0</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number counter" data-target="1">0</div>
+          <div class="stat-label">Years Exp.</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number counter" data-target="15">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── EXPERIENCE ────────────────────────────────────────── -->
+<section id="experience" class="section">
+  <div class="section-header center" data-aos="fade-up">
+    <div class="section-eyebrow" style="margin:0 auto 14px;">Experience</div>
+    <h2 class="section-title">My Journey</h2>
+    <p class="section-desc" style="margin:18px auto 0;">
+      A timeline of roles, responsibilities, and the skills picked up along the way.
+    </p>
+  </div>
+
+  <div class="timeline">
+    <div class="tl-rail" aria-hidden="true"></div>
+
+    <div class="tl-item" data-aos="fade-up">
+      <div class="tl-node"><i class="fas fa-code" aria-hidden="true"></i></div>
+      <div class="tl-card">
+        <span class="tl-year">2025 — Present</span>
+        <h3>Frontend Developer Intern</h3>
+        <p>Developing responsive websites and modern UI components using React and Tailwind CSS, working closely with designers to ship pixel-accurate interfaces.</p>
+        <div class="tl-tags">
+          <span>React</span><span>Tailwind CSS</span><span>Responsive Design</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item" data-aos="fade-up" data-aos-delay="120">
+      <div class="tl-node"><i class="fas fa-layer-group" aria-hidden="true"></i></div>
+      <div class="tl-card">
+        <span class="tl-year">2025</span>
+        <h3>React Developer</h3>
+        <p>Built dynamic React applications with reusable component architectures, clean state management, and a focus on maintainable, scalable codebases.</p>
+        <div class="tl-tags">
+          <span>React Hooks</span><span>Component Design</span><span>State Management</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item tl-item-future" data-aos="fade-up" data-aos-delay="240">
+      <div class="tl-node tl-node-future"><i class="fas fa-rocket" aria-hidden="true"></i></div>
+      <div class="tl-card tl-card-future">
+        <span class="tl-year">What's next</span>
+        <h3>Open to new opportunities</h3>
+        <p>Looking to grow into a full-time frontend or product engineering role where craft, performance, and accessibility are taken seriously.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SKILLS ────────────────────────────────────────────── -->
+<section id="skills" class="section">
+  <div class="section-header center" data-aos="fade-up">
+    <div class="section-eyebrow" style="margin:0 auto 14px;">Tech Stack</div>
+    <h2 class="section-title">Core Skills</h2>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+      <div class="skill-header">
+        <span class="skill-name">HTML5</span>
+        <span class="skill-pct">95%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" data-width="95%"></div>
+      </div>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="80">
+      <div class="skill-header">
+        <span class="skill-name">CSS3 / Tailwind</span>
+        <span class="skill-pct">90%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" data-width="90%"></div>
+      </div>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="160">
+      <div class="skill-header">
+        <span class="skill-name">JavaScript</span>
+        <span class="skill-pct">85%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" data-width="85%"></div>
+      </div>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="240">
+      <div class="skill-header">
+        <span class="skill-name">React</span>
+        <span class="skill-pct">80%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" data-width="80%"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SERVICES ──────────────────────────────────────────── -->
+<section id="services" class="section">
+  <div class="section-header center" data-aos="fade-up">
+    <div class="section-eyebrow" style="margin:0 auto 14px;">What I Offer</div>
+    <h2 class="section-title">Services</h2>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+      <div class="service-icon-wrap"><i class="fas fa-code"></i></div>
+      <h3>Web Development</h3>
+      <p>Responsive, performant websites built with clean semantic HTML, modern CSS, and optimised JavaScript.</p>
+    </div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="service-icon-wrap"><i class="fas fa-palette"></i></div>
+      <h3>UI / UX Design</h3>
+      <p>Beautiful, intuitive interfaces designed with the user in mind — from wireframes to polished prototypes.</p>
+    </div>
+    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="service-icon-wrap"><i class="fas fa-mobile-screen"></i></div>
+      <h3>Responsive Design</h3>
+      <p>Pixel-perfect layouts that feel natural on every screen size, from large desktops to the smallest phones.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROJECTS ──────────────────────────────────────────── -->
+<section id="projects" class="section">
+  <div class="section-header" data-aos="fade-up">
+    <div class="section-eyebrow">Portfolio</div>
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-desc">
+      A curated collection showcasing expertise in frontend development,
+      responsive design, and modern web technologies.
+    </p>
+  </div>
+
+  <div class="project-controls">
+    <div class="search-wrap">
+      <i class="fas fa-search"></i>
+      <label for="projectSearch" class="sr-only">Search projects</label>
+      <input type="text" id="projectSearch" placeholder="Search by name, tech, or category…" />
+    </div>
+    <div class="filters" role="group" aria-label="Filter projects by category">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="web" aria-pressed="false">Web Development</button>
+      <button class="filter-btn" data-filter="mobile" aria-pressed="false">Mobile Development</button>
+      <button class="filter-btn" data-filter="uiux" aria-pressed="false">UI/UX Design</button>
+      <button class="filter-btn" data-filter="data" aria-pressed="false">Data Analysis</button>
+      <button class="filter-btn" data-filter="other" aria-pressed="false">Other</button>
+    </div>
+  </div>
+
+  <div class="projects-grid" id="projectsGrid">
+
+    <!-- Project 1 -->
+    <article class="project-card"
+      data-category="web"
+      data-aos="fade-up"
+      data-title="Developer Portfolio"
+      data-type="Web Development"
+      data-desc="A modern, fully responsive portfolio website featuring dark/light theme persistence, scroll-triggered animations, live project filtering, and an accessible contact form with inline validation. Built mobile-first with semantic HTML and keyboard-navigable components throughout."
+      data-tech="React, CSS3, JavaScript, AOS"
+      data-img1="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&q=80"
+      data-img2="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=900&q=80"
+      data-link="#" data-repo="#">
+      <div class="project-img">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=700&q=80" alt="Developer portfolio website preview" loading="lazy" />
+        <span class="project-badge">Featured</span>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <h3>Developer Portfolio</h3>
+          <span class="project-type">Web Development</span>
+        </div>
+        <p class="project-desc">Modern portfolio with dark mode, scroll animations, project filtering, and responsive layout.</p>
+        <div class="project-tags">
+          <span>React</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="project-footer">
+          <button type="button" class="btn-sm-primary project-open" aria-haspopup="dialog">
+            <i class="fas fa-circle-info" aria-hidden="true"></i> View Details
+          </button>
+          <a href="#" class="btn-sm-ghost" onclick="event.stopPropagation()"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project-card"
+      data-category="web"
+      data-aos="fade-up" data-aos-delay="80"
+      data-title="E-Commerce Store"
+      data-type="Web Development"
+      data-desc="A complete shopping experience with a persistent cart system, dynamic product filtering by category and price, and a multi-step checkout flow. Integrates a mock REST API for live product data and order handling."
+      data-tech="JavaScript, REST API, CSS3"
+      data-img1="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=900&q=80"
+      data-img2="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=900&q=80"
+      data-link="#" data-repo="#">
+      <div class="project-img">
+        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=700&q=80" alt="E-commerce store interface preview" loading="lazy" />
+        <span class="project-badge">Popular</span>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <h3>E-Commerce Store</h3>
+          <span class="project-type">Web Development</span>
+        </div>
+        <p class="project-desc">Full shopping interface with cart management, dynamic product filtering, and checkout flow.</p>
+        <div class="project-tags">
+          <span>JavaScript</span><span>REST API</span><span>CSS</span>
+        </div>
+        <div class="project-footer">
+          <button type="button" class="btn-sm-primary project-open" aria-haspopup="dialog">
+            <i class="fas fa-circle-info" aria-hidden="true"></i> View Details
+          </button>
+          <a href="#" class="btn-sm-ghost" onclick="event.stopPropagation()"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="project-card"
+      data-category="mobile"
+      data-aos="fade-up" data-aos-delay="160"
+      data-title="Task Manager App"
+      data-type="Mobile Development"
+      data-desc="A productivity-focused mobile app with drag-and-drop task boards, deadline reminders, priority labels, and offline-first local storage. Supports light and dark themes with persisted user preference."
+      data-tech="React Native, Hooks, AsyncStorage"
+      data-img1="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=900&q=80"
+      data-img2="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=900&q=80"
+      data-link="#" data-repo="#">
+      <div class="project-img">
+        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=700&q=80" alt="Task manager app preview" loading="lazy" />
+        <span class="project-badge">Productivity</span>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <h3>Task Manager App</h3>
+          <span class="project-type">Mobile Development</span>
+        </div>
+        <p class="project-desc">Drag-and-drop task board with deadlines, priority labels, and local storage persistence.</p>
+        <div class="project-tags">
+          <span>React Native</span><span>Hooks</span><span>Storage</span>
+        </div>
+        <div class="project-footer">
+          <button type="button" class="btn-sm-primary project-open" aria-haspopup="dialog">
+            <i class="fas fa-circle-info" aria-hidden="true"></i> View Details
+          </button>
+          <a href="#" class="btn-sm-ghost" onclick="event.stopPropagation()"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 4 -->
+    <article class="project-card"
+      data-category="data"
+      data-aos="fade-up" data-aos-delay="240"
+      data-title="Weather Dashboard"
+      data-type="Data Analysis"
+      data-desc="A real-time weather analytics dashboard pulling live data from the OpenWeatherMap API. Visualises 7-day forecasts with interactive charts, historical trend comparisons, and dynamic UI theming based on conditions."
+      data-tech="JavaScript, Chart.js, OpenWeather API"
+      data-img1="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&q=80"
+      data-img2="https://images.unsplash.com/photo-1592210454359-9043f067919b?w=900&q=80"
+      data-link="#" data-repo="#">
+      <div class="project-img">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=700&q=80" alt="Weather dashboard preview" loading="lazy" />
+        <span class="project-badge">API Project</span>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <h3>Weather Dashboard</h3>
+          <span class="project-type">Data Analysis</span>
+        </div>
+        <p class="project-desc">Real-time weather app with forecast charts, trend analysis, and dynamic theming.</p>
+        <div class="project-tags">
+          <span>API</span><span>JavaScript</span><span>Charts.js</span>
+        </div>
+        <div class="project-footer">
+          <button type="button" class="btn-sm-primary project-open" aria-haspopup="dialog">
+            <i class="fas fa-circle-info" aria-hidden="true"></i> View Details
+          </button>
+          <a href="#" class="btn-sm-ghost" onclick="event.stopPropagation()"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 5 -->
+    <article class="project-card"
+      data-category="uiux"
+      data-aos="fade-up"
+      data-title="Banking App Redesign"
+      data-type="UI/UX Design"
+      data-desc="A complete UX overhaul of a mobile banking flow, focused on reducing transaction friction. Includes user research notes, wireframes, a component design system, and high-fidelity prototypes tested with 12 users."
+      data-tech="Figma, Prototyping, Design Systems"
+      data-img1="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=900&q=80"
+      data-img2="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=900&q=80"
+      data-link="#" data-repo="#">
+      <div class="project-img">
+        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=700&q=80" alt="Banking app redesign preview" loading="lazy" />
+        <span class="project-badge">Case Study</span>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <h3>Banking App Redesign</h3>
+          <span class="project-type">UI/UX Design</span>
+        </div>
+        <p class="project-desc">End-to-end UX redesign with research, wireframes, and a tested high-fidelity prototype.</p>
+        <div class="project-tags">
+          <span>Figma</span><span>UX Research</span><span>Prototyping</span>
+        </div>
+        <div class="project-footer">
+          <button type="button" class="btn-sm-primary project-open" aria-haspopup="dialog">
+            <i class="fas fa-circle-info" aria-hidden="true"></i> View Details
+          </button>
+          <a href="#" class="btn-sm-ghost" onclick="event.stopPropagation()"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project 6 -->
+    <article class="project-card"
+      data-category="other"
+      data-aos="fade-up" data-aos-delay="80"
+      data-title="Markdown Note Editor"
+      data-type="Other"
+      data-desc="A lightweight, distraction-free markdown editor with live preview, syntax highlighting, and export to PDF or HTML. Built as a desktop-class web app using the File System Access API for local-first saving."
+      data-tech="JavaScript, CodeMirror, File System API"
+      data-img1="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&q=80"
+      data-img2="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&q=80"
+      data-link="#" data-repo="#">
+      <div class="project-img">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=700&q=80" alt="Markdown note editor preview" loading="lazy" />
+        <span class="project-badge">Utility</span>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <h3>Markdown Note Editor</h3>
+          <span class="project-type">Other</span>
+        </div>
+        <p class="project-desc">Distraction-free markdown editor with live preview and local-first saving.</p>
+        <div class="project-tags">
+          <span>JavaScript</span><span>CodeMirror</span><span>PWA</span>
+        </div>
+        <div class="project-footer">
+          <button type="button" class="btn-sm-primary project-open" aria-haspopup="dialog">
+            <i class="fas fa-circle-info" aria-hidden="true"></i> View Details
+          </button>
+          <a href="#" class="btn-sm-ghost" onclick="event.stopPropagation()"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ─── PROJECT MODAL ─────────────────────────────────────── -->
+<div class="modal-overlay" id="modalOverlay" role="presentation">
+  <div class="modal-box" id="modalBox" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+    <button type="button" class="modal-close" id="modalClose" aria-label="Close project details">
+      <i class="fas fa-xmark" aria-hidden="true"></i>
+    </button>
+
+    <div class="modal-gallery">
+      <img id="modalImg1" src="" alt="" loading="lazy" />
+      <img id="modalImg2" src="" alt="" loading="lazy" />
+    </div>
+
+    <div class="modal-content">
+      <span class="project-type" id="modalCategory"></span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+
+      <h4 class="modal-subhead">Technologies used</h4>
+      <div class="project-tags" id="modalTech"></div>
+
+      <div class="project-footer" style="margin-top:28px;">
+        <a href="#" id="modalLink" class="btn-sm-primary"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo</a>
+        <a href="#" id="modalRepo" class="btn-sm-ghost"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── TESTIMONIALS ──────────────────────────────────────── -->
+<section id="testimonials" class="section">
+  <div class="section-header center" data-aos="fade-up">
+    <div class="section-eyebrow" style="margin:0 auto 14px;">Kind Words</div>
+    <h2 class="section-title">Client Testimonials</h2>
+  </div>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card" data-aos="fade-up">
+      <div class="quote-icon">"</div>
+      <p>"Outstanding work quality and professionalism. Fatima delivered exactly what we envisioned, on time and with great attention to detail."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">C1</div>
+        <div>
+          <div class="author-name">Client One</div>
+          <div class="author-role">Startup Founder</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="quote-icon">"</div>
+      <p>"Delivered exactly what we needed. The UI is clean, fast and intuitive. Our users love the new design."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">C2</div>
+        <div>
+          <div class="author-name">Client Two</div>
+          <div class="author-role">Product Manager</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="quote-icon">"</div>
+      <p>"Highly recommended developer. Fatima's code is clean, well-structured, and she communicates brilliantly throughout the project."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">C3</div>
+        <div>
+          <div class="author-name">Client Three</div>
+          <div class="author-role">Agency Director</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BLOG / ARTICLES ───────────────────────────────────── -->
+<section id="blog" class="section" aria-labelledby="blogHeading">
+  <div class="section-header center" data-aos="fade-up">
+    <div class="section-eyebrow" style="margin:0 auto 14px;">Writing</div>
+    <h2 class="section-title" id="blogHeading">Latest Articles</h2>
+    <p class="section-desc" style="margin:18px auto 0;">
+      Notes on frontend engineering, accessibility, and the craft of building for the web.
+    </p>
+  </div>
+
+  <div class="articles-grid">
+
+    <article class="article-card" data-aos="fade-up">
+      <div class="article-img">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700&q=80" alt="Code editor showing CSS grid layout" loading="lazy" />
+        <span class="article-tag">Frontend</span>
+      </div>
+      <div class="article-body">
+        <span class="article-date"><i class="fas fa-calendar-days" aria-hidden="true"></i> June 12, 2026</span>
+        <h3>Mastering CSS Grid: A Practical Guide</h3>
+        <p class="article-excerpt">A hands-on walkthrough of CSS Grid fundamentals — from named template areas to building fully responsive layouts without a single media query hack.</p>
+        <button type="button" class="read-more" data-article="grid">
+          Read More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </article>
+
+    <article class="article-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="article-img">
+        <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=700&q=80" alt="Person using assistive technology on a laptop" loading="lazy" />
+        <span class="article-tag">Accessibility</span>
+      </div>
+      <div class="article-body">
+        <span class="article-date"><i class="fas fa-calendar-days" aria-hidden="true"></i> May 28, 2026</span>
+        <h3>Why Accessibility Isn't Optional</h3>
+        <p class="article-excerpt">Practical techniques for building keyboard-navigable, screen-reader-friendly interfaces — and why accessible design is simply better design for everyone.</p>
+        <button type="button" class="read-more" data-article="a11y">
+          Read More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </article>
+
+    <article class="article-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="article-img">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80" alt="Performance graphs on a monitor" loading="lazy" />
+        <span class="article-tag">Performance</span>
+      </div>
+      <div class="article-body">
+        <span class="article-date"><i class="fas fa-calendar-days" aria-hidden="true"></i> May 9, 2026</span>
+        <h3>Speeding Up Your React App</h3>
+        <p class="article-excerpt">Lazy loading, code splitting, image optimisation, and memoisation strategies that took one of my projects from a 4s to a 0.8s first paint.</p>
+        <button type="button" class="read-more" data-article="perf">
+          Read More <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ─── ARTICLE MODAL ─────────────────────────────────────── -->
+<div class="modal-overlay" id="articleOverlay" role="presentation">
+  <div class="modal-box article-modal-box" id="articleBox" role="dialog" aria-modal="true" aria-labelledby="articleModalTitle" tabindex="-1">
+    <button type="button" class="modal-close" id="articleClose" aria-label="Close article">
+      <i class="fas fa-xmark" aria-hidden="true"></i>
+    </button>
+    <div class="modal-content" style="padding-top:36px;">
+      <span class="project-type" id="articleModalTag"></span>
+      <h3 id="articleModalTitle"></h3>
+      <span class="article-date" id="articleModalDate" style="display:block;margin-bottom:18px;"></span>
+      <div id="articleModalBody" class="article-full"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── CONTACT ───────────────────────────────────────────── -->
+<section id="contact" class="section">
+  <div class="contact-wrap">
+
+    <div data-aos="fade-right">
+      <div class="section-eyebrow">Get In Touch</div>
+      <h3 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;letter-spacing:-.4px;margin-bottom:16px;line-height:1.18;">
+        Let's build something <span class="accent-word">great</span>
+      </h3>
+      <p style="color:var(--text-2);line-height:1.85;font-size:.98rem;margin-bottom:34px;">
+        Open to frontend roles, freelance projects, or just a conversation
+        about design and code. Drop me a message.
+      </p>
+
+      <div class="contact-item">
+        <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+        <div class="contact-item-text">
+          <small>Email</small>
+          <span>fatimaakbar004@gmail.com</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon"><i class="fas fa-map-pin"></i></div>
+        <div class="contact-item-text">
+          <small>Location</small>
+          <span>Karachi, Pakistan</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon"><i class="fas fa-clock"></i></div>
+        <div class="contact-item-text">
+          <small>Response time</small>
+          <span>Within 24 hours</span>
+        </div>
+      </div>
+    </div>
+
+    <div data-aos="fade-left">
+      <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+        <i class="fas fa-circle-check" aria-hidden="true"></i>
+        <span>Your message has been sent. I'll get back to you within 24 hours.</span>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+        <div class="form-row">
+          <div class="form-group" id="fnameGroup">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" placeholder="Your name" required aria-required="true" aria-describedby="fnameError" />
+            <span class="form-error-msg" id="fnameError" role="alert">Please enter your name.</span>
+          </div>
+          <div class="form-group" id="femailGroup">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" placeholder="your@email.com" required aria-required="true" aria-describedby="femailError" />
+            <span class="form-error-msg" id="femailError" role="alert">Please enter a valid email address.</span>
+          </div>
+        </div>
+        <div class="form-group" id="fsubjectGroup">
+          <label for="fsubject">Subject</label>
+          <input type="text" id="fsubject" placeholder="Project inquiry…" required aria-required="true" aria-describedby="fsubjectError" />
+          <span class="form-error-msg" id="fsubjectError" role="alert">Please enter a subject.</span>
+        </div>
+        <div class="form-group" id="fmessageGroup">
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" rows="5" placeholder="Tell me about your project…" required aria-required="true" aria-describedby="fmessageError"></textarea>
+          <span class="form-error-msg" id="fmessageError" role="alert">Please enter a message (at least 10 characters).</span>
+        </div>
+        <button type="submit" class="btn-primary" id="submitBtn">
+          Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i>
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── FOOTER ────────────────────────────────────────────── -->
+</main>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">FA.</div>
+      <p>Building modern digital experiences.</p>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-socials">
+      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 <span>Fatima Akbar</span>. All rights reserved.</p>
+    <p>Built with <span>♥</span> and clean code</p>
+  </div>
+</footer>
+
+<!-- Scroll-to-top -->
+<button id="scrollTop" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Script -->
+<script src="script.js"></script>
+</body>
+</html>
